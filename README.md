@@ -1,24 +1,17 @@
-# feeling-you-app
+# **Feeling You**🧠
+------------
+#### Welcome,👋
 
-## Project setup
-```
-npm install
-```
+In this adventure I will guide you so that you can get to ***know yourself***.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[========]
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+Between us we can define the habits that make your life more enjoyable.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+> Remember that your health depends on your state of mind,  I hope these tips help you define your habits.
+
+------------
+
+[![Emotions](https://images.pexels.com/photos/3612885/pexels-photo-3612885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "Emotions")](https://images.pexels.com/photos/3612885/pexels-photo-3612885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "Emotions")
