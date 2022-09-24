@@ -1,12 +1,17 @@
 <template>
   <div>
-    <h1>First Question</h1>
+    <FormQuestion/>
   </div>
 </template>
 
 <script>
+import FormQuestion from '@/components/FormQuestion.vue'
+
 export default {
-  name: 'questionsView'
+  name: 'questionsView',
+  components: {
+    FormQuestion
+  }
 }
 </script>
 

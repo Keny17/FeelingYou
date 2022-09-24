@@ -1,14 +1,14 @@
 <template>
-<FormPage/>
+<StartPage/>
 </template>
 
 <script>
-import FormPage from '@/components/FormPage.vue'
+import StartPage from '@/components/StartPage.vue'
 
 export default {
-  name: 'formPage',
+  name: 'startPage',
   components: {
-    FormPage
+    StartPage
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-<div class="formPage">
+<div class="startPage">
   <h1>Are you ready?</h1>
   <button v-on:click="start()">START</button>
 </div>
@@ -7,18 +7,18 @@
 
 <script>
 export default {
-  el: '#form-Page',
+  el: '#start-Page',
   methods: {
     start: function () {
       window.location.assign('/questions')
     }
   },
-  name: 'formPage'
+  name: 'startPage'
 }
 </script>
 
 <style scoped>
-.formPage {
+.startPage {
   background-image: url("@/assets/theme.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,8 +27,10 @@ export default {
 h1{
   color:black;
   text-align: center;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1,5rem 0;
   padding: 1rem;
+  font-size: 4rem;
+  text-shadow: 1px 2px white;
 }
 button {
   font-family: cursive;
@@ -44,7 +46,7 @@ button {
   background-color: #000000;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(53, 205, 255);
+  box-shadow: 5px 7px rgb(53, 205, 255);
 }
 button:hover {
   background-color: #ffffff;
@@ -52,7 +54,7 @@ button:hover {
 }
 button:active {
   background-color: #ffffff;
-  box-shadow: 0 5px rgb(53, 205, 255);
-  transform: translateY(4px);
+  box-shadow: 1px 2px rgb(53, 205, 255);
+  transform: translateY(4px) translateX(2px);
 }
 </style>

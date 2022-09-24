@@ -1,11 +1,14 @@
 <template>
 <div class="app">
   <nav>
+    <img id="mainIcon" src="@/assets/Icon.png" alt="Logo"/>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/start">Start</router-link>
   </nav>
-  <router-view/>
+  <transition name="fade" mode="out-in">
+    <router-view/>
+  </transition>
 </div>
 </template>
 
@@ -30,5 +33,19 @@ a{
   text-decoration: none ;
   align-content: right;
   color:white;
+}
+#mainIcon{
+  width: 1.5rem;
+  height: 1.5rem;
+  float: left;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

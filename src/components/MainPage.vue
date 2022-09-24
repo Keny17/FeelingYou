@@ -1,7 +1,7 @@
 <template>
 <div class="homePage">
   <div class="homeBody">
-    <img id="mainImage" alt="Home Image" src="../assets/mainImage.png"/>
+    <img id="mainImage" alt="Home Image" src="@/assets/mainImage.png"/>
   </div>
   <div class="homeFooter">
     <section>
@@ -121,18 +121,19 @@ float:left;
   background-size: cover;
   color:white;
   font-size: 1rem;
-  justify-content: center;
 }
 section {
   display: grid;
-  grid-template-columns: 20rem 25rem 20rem;
+  align-content: center;
+  grid-template-columns: 30% 40% 30%;
   width: 85%;
   height: 8rem;
+  margin: 0 auto;
 }
 #footerLogo{
-  width: 50%;
+  width: 60%;
   height: 5rem;
-  margin: 1.5rem 0 0 6.5rem;
+  margin: 1.5rem 0 0 4rem;
 }
 .bi-twitter {
   color: #55acee;
