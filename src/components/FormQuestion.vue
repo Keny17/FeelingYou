@@ -8,71 +8,75 @@
     </h2><hr>
     <h2>How many hours do you sleep a day?</h2>
 
-    <input type="radio" value="Less than 6" v-model="pickedSleep" />
-    <label for="one">Less than 6</label>
-    <input type="radio" value="Between 6 and 8" v-model="pickedSleep" />
-    <label for="two">Between 6 and 8</label>
-    <input type="radio" value="More than 8" v-model="pickedSleep" />
-    <label for="two">More than 8</label><hr>
+    <!-- method="get" action="/answers" -->
 
-    <h2>What is your level of satisfaction with your current job?</h2>
+    <form id="form">
+      <input type="radio" value="Less than 6" id="Lessthan6" name="pickedSleep" v-model="pickedSleep" />
+      <label for="Lessthan6">Less than 6</label>
+      <input type="radio" value="Between 6 and 8" id="Between6and8" name="pickedSleep" v-model="pickedSleep" />
+      <label for="Between6and8">Between 6 and 8</label>
+      <input type="radio" value="More than 8" id="Morethan8" name="pickedSleep" v-model="pickedSleep" />
+      <label for="Morethan8">More than 8</label><hr>
 
-    <input type="radio" value="Dislike" v-model="pickedJob" />
-    <label for="one">Dislike</label>
-    <input type="radio" value="It's okay" v-model="pickedJob" />
-    <label for="two">It's okay</label>
-    <input type="radio" value="I like it" v-model="pickedJob" />
-    <label for="two">I like it</label><hr>
+      <h2>What is your level of satisfaction with your current job?</h2>
 
-    <h2>How many hours a week do you spend working or thinking about your job?</h2>
+      <input type="radio" value="Dislike" id="Dislike" name="pickedJob" v-model="pickedJob" />
+      <label for="Dislike">Dislike</label>
+      <input type="radio" value="It's okay" id="It'sokay" name="pickedJob" v-model="pickedJob" />
+      <label for="It'sokay">It's okay</label>
+      <input type="radio" value="I like it" id="Ilikeit" name="pickedJob" v-model="pickedJob" />
+      <label for="Ilikeit">I like it</label><hr>
 
-    <input type="radio" value="Less than 36 hours" v-model="pickedJobTime" />
-    <label for="one">Less than 38 hours</label>
-    <input type="radio" value="Between 36 and 48 hours" v-model="pickedJobTime" />
-    <label for="two">Between 38 and 48 hours</label>
-    <input type="radio" value="More than 48 hours" v-model="pickedJobTime" />
-    <label for="two">More than 48 hours</label><hr>
+      <h2>How many hours a week do you spend working or thinking about your job?</h2>
 
-    <h2>How much time do you dedicate to yourself during the day?</h2>
+      <input type="radio" value="Less than 36 hours" id="Lessthan36" name="pickedJobTime" v-model="pickedJobTime" />
+      <label for="Lessthan36">Less than 38 hours</label>
+      <input type="radio" value="Between 36 and 48 hours" id="Between36and48" name="pickedJobTime" v-model="pickedJobTime" />
+      <label for="Between36and48">Between 38 and 48 hours</label>
+      <input type="radio" value="More than 48 hours" id="Morethan48" name="pickedJobTime" v-model="pickedJobTime" />
+      <label for="Morethan48">More than 48 hours</label><hr>
 
-    <input type="radio" value="I'm never alone" v-model="pickedAlone" />
-    <label for="one">I'm never alone</label>
-    <input type="radio" value="The time necessary for me" v-model="pickedAlone" />
-    <label for="two">The time necessary for me</label>
-    <input type="radio" value="I spend a lot of time alone" v-model="pickedAlone" />
-    <label for="two">I spend a lot of time alone</label><hr>
+      <h2>How much time do you dedicate to yourself during the day?</h2>
 
-    <h2>How much time a week do you spend on physical activity?</h2>
+      <input type="radio" value="I'm never alone" id="I'mneveralone" name="pickedAlone" v-model="pickedAlone" />
+      <label for="I'mneveralone">I'm never alone</label>
+      <input type="radio" value="The time necessary for me" id="Thetimenecessary" name="pickedAlone" v-model="pickedAlone" />
+      <label for="Thetimenecessary">The time necessary for me</label>
+      <input type="radio" value="I spend a lot of time alone" id="Ispendalotof" name="pickedAlone" v-model="pickedAlone" />
+      <label for="Ispendalotof">I spend a lot of time alone</label><hr>
 
-    <input type="radio" value="I dedicate myself to breathing" v-model="pickedPhysical" />
-    <label for="one">I dedicate myself to breathing</label>
-    <input type="radio" value="At least an hour" v-model="pickedPhysical" />
-    <label for="two">At least an hour</label>
-    <input type="radio" value="I do it all the time" v-model="pickedPhysical" />
-    <label for="two">I do it all the time</label><hr>
+      <h2>How much time a week do you spend on physical activity?</h2>
 
-    <h2>How much time do you use to strengthen your skills?</h2>
+      <input type="radio" value="I dedicate myself to breathing" id="Idedicatemyself" name="pickedPhysical" v-model="pickedPhysical" />
+      <label for="Idedicatemyself">I dedicate myself to breathing</label>
+      <input type="radio" value="At least an hour for day" id="Atleastanhour" name="pickedPhysical" v-model="pickedPhysical" />
+      <label for="Atleastanhour">At least an hour for day</label>
+      <input type="radio" value="I do it all the time" id="Idoitallthetime" name="pickedPhysical" v-model="pickedPhysical" />
+      <label for="Idoitallthetime">I do it all the time</label><hr>
 
-    <input type="radio" value="I think i know enough" v-model="pickedSkills" />
-    <label for="one">I think i know enough</label>
-    <input type="radio" value="I focus on what I don't know" v-model="pickedSkills" />
-    <label for="two">I focus on what I don't know</label>
-    <input type="radio" value="I always focus on improving them" v-model="pickedSkills" />
-    <label for="two">I always focus on improving them</label><hr>
+      <h2>How much time do you use to strengthen your mind skills?</h2>
+
+      <input type="radio" value="I think i know enough" id="Ithinkiknow" name="pickedSkills" v-model="pickedSkills" />
+      <label for="Ithinkiknow">I think i know enough</label>
+      <input type="radio" value="I focus on what I don't know" id="Ifocusonwhat" name="pickedSkills" v-model="pickedSkills" />
+      <label for="Ifocusonwhat">I focus on what I don't know</label>
+      <input type="radio" value="I always focus on improving them" id="Ialwaysfocus" name="pickedSkills" v-model="pickedSkills" />
+      <label for="Ialwaysfocus">I always focus on improving them</label><hr>
+    </form>
 
     <h2>Answers</h2>
 
     <div id="answers">
-      <h3>1. {{ pickedSleep }}</h3>
-      <h3>2. {{ pickedJob }}</h3>
-      <h3>3. {{ pickedJobTime }}</h3>
-      <h3>4. {{ pickedAlone }}</h3>
-      <h3>5. {{ pickedPhysical }}</h3>
-      <h3>6. {{ pickedSkills }}</h3>
+      <h3>1. 😴 {{ pickedSleep }}</h3>
+      <h3>2. 💼 {{ pickedJob }}</h3>
+      <h3>3. ⏰ {{ pickedJobTime }}</h3>
+      <h3>4. 🧍‍♂️ {{ pickedAlone }}</h3>
+      <h3>5. 💪 {{ pickedPhysical }}</h3>
+      <h3>6. 🤓 {{ pickedSkills }}</h3>
     </div>
 
     <h2>If your answers are correct, press continue</h2>
-    <button>Continue</button>
+    <input type="button" value="Continue" id="buttonContinue" v-on:click="answer()"/>
   </div>
 </section>
 </template>
@@ -88,6 +92,35 @@ export default {
       pickedAlone: String(' '),
       pickedPhysical: String(' '),
       pickedSkills: String(' ')
+    }
+  },
+  methods: {
+    answer: function (event) {
+      if (this.pickedSleep === 'Between 6 and 8') {
+        if (this.pickedJob === 'I like it') {
+          if (this.pickedJobTime === 'Less than 36 hours') {
+            if (this.pickedAlone === 'The time necessary for me') {
+              if (this.pickedPhysical === 'At least an hour for day') {
+                if (this.pickedSkills === 'I always focus on improving them') {
+                  window.location.assign('/correctAnswers')
+                } else {
+                  window.location.assign('/incorrectAnswers')
+                }
+              } else {
+                window.location.assign('/incorrectAnswers')
+              }
+            } else {
+              window.location.assign('/incorrectAnswers')
+            }
+          } else {
+            window.location.assign('/incorrectAnswers')
+          }
+        } else {
+          window.location.assign('/incorrectAnswers')
+        }
+      } else {
+        window.location.assign('/incorrectSleep')
+      }
     }
   }
 }
@@ -135,7 +168,7 @@ h3{
 input, label{
   margin: 1.5rem 0.5rem 1.5rem 0.5rem;
   font: strong;
-  text-shadow: 0.5px 0.5px white;
+  text-shadow: 0.2px 0.5px white;
 }
 #answers{
   display: grid;
@@ -146,16 +179,17 @@ input, label{
   background-color: rgba(255, 255, 255, 0.477);
   border: solid white;
 }
-button:hover {
+#buttonContinue:hover {
   background-color: #ffffff;
   color: black;
 }
-button:active {
+#buttonContinue:active {
   background-color: #ffffff;
   box-shadow: 1px 2px rgb(255, 140, 51);
   transform: translateY(4px) translateX(2px);
 }
-button {
+#buttonContinue {
+  width: 20%;
   font-family: cursive;
   display: inline-block;
   padding: 0.5rem 1rem;

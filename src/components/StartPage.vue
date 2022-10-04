@@ -1,19 +1,18 @@
 <template>
 <div class="startPage">
   <h1>Are you ready?</h1>
-  <button v-on:click="start()">START</button>
+  <button v-on:click="start">START</button>
 </div>
 </template>
 
 <script>
 export default {
-  el: '#start-Page',
+  el: 'startPage',
   methods: {
     start: function () {
       window.location.assign('/questions')
     }
-  },
-  name: 'startPage'
+  }
 }
 </script>
 
