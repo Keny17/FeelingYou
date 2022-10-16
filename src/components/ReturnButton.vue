@@ -14,20 +14,21 @@ export default {
 </script>
 
 <style scoped>
-#buttonContinue:hover {
+#buttonReturn:hover {
   background-color: #ffffff;
   color: black;
 }
-#buttonContinue:active {
+#buttonReturn:active {
   background-color: #ffffff;
   box-shadow: 1px 2px rgb(255, 140, 51);
   transform: translateY(4px) translateX(2px);
 }
-#buttonContinue {
+#buttonReturn {
   font-family: cursive;
+  width: 20%;
   display: inline-block;
   padding: 0.5rem 1rem;
-  margin: 1rem 0 1rem 0;
+  margin: 0 auto;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;

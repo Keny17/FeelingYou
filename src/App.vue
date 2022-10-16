@@ -1,7 +1,7 @@
 <template>
 <div class="app">
   <nav>
-    <img id="mainIcon" src="@/assets/Icon.png" alt="Logo"/>
+    <img id="mainIcon" src="@/assets/Icon.png" alt="Logo" v-on:click="pageApi()"/>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/start">Start</router-link>
@@ -11,6 +11,15 @@
   </transition>
 </div>
 </template>
+<script>
+export default ({
+  methods: {
+    pageApi: function () {
+      window.location.assign('/pageApi')
+    }
+  }
+})
+</script>
 
 <style scoped>
 *{

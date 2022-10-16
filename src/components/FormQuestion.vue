@@ -104,19 +104,19 @@ export default {
                 if (this.pickedSkills === 'I always focus on improving them') {
                   window.location.assign('/correctAnswers')
                 } else {
-                  window.location.assign('/incorrectAnswers')
+                  window.location.assign('/incorrectSkills')
                 }
               } else {
-                window.location.assign('/incorrectAnswers')
+                window.location.assign('/incorrectPhysical')
               }
             } else {
-              window.location.assign('/incorrectAnswers')
+              window.location.assign('/incorrectAlone')
             }
           } else {
-            window.location.assign('/incorrectAnswers')
+            window.location.assign('/incorrectTime')
           }
         } else {
-          window.location.assign('/incorrectAnswers')
+          window.location.assign('/incorrectJob')
         }
       } else {
         window.location.assign('/incorrectSleep')
