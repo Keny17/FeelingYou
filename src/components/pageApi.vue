@@ -41,8 +41,8 @@ export default {
   overflow:hidden;
 }
 #responseBox:hover {
-  -webkit-transform:scale(1.8);
-  transform:scale(1.8);
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
 }
 p{
   margin: 13rem 0 0 18rem;
